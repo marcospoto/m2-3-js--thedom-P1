@@ -12,6 +12,12 @@
 
 function sum(arr) {
   // Your code here
+
+  if (arr.every((item) => typeof item === "number") && arr.length === 2) {
+    return arr[0] + arr[1];
+  } else {
+    return undefined;
+  }
 }
 
 // Part 2 - Test

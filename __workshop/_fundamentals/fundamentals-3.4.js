@@ -9,6 +9,13 @@
 
 function sum(arr) {
   // Your code here
+
+  if (arr.find((item) => typeof item !== "number")) {
+    return undefined;
+  } else {
+    const reducer = (accumulator, currentValue) => accumulator + currentValue;
+    return arr.reduce(reducer);
+  }
 }
 
 // Part 2 - Test
